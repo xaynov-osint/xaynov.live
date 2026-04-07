@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xaynov | Price List 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-main: #e5e5e5;
+            --text-muted: #737373;
+            --border-color: #171717;
+            --accent: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .category-header {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #444;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .category-header::after {
+            content: "";
+            flex-grow: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        .service-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: baseline;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .service-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .service-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .service-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            max-width: 550px;
+        }
+
+        .price-tag {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-align: right;
+            padding-left: 2rem;
+        }
+
+        .info-block {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: #0a0a0a;
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            margin-top: 6rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        @media (max-width: 640px) {
+            .service-item { grid-template-columns: 1fr; gap: 0.5rem; }
+            .price-tag { text-align: left; padding-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <header>
+            <div class="mono text-[10px] uppercase text-[#444] mb-4 tracking-[0.3em]">Services & Rates // 2026</div>
+            <h1>Прайс-лист</h1>
+        </header>
+
+        <main>
+            <!-- Категория 01 -->
+            <div class="category-header mono">01 / Исследования</div>
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Digital Footprint</span>
+                        <span class="service-desc">Поиск цифровых следов, упоминаний в сети, аккаунтов и старых объявлений.</span>
+                    </div>
+                    <div class="price-tag mono">$10</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Uncomplete Data</span>
+                        <span class="service-desc">Работа по фото, частичному ФИО или старому номеру телефона.</span>
+                    </div>
+                    <div class="price-tag mono">$20</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Due Diligence</span>
+                        <span class="service-desc">Проверка контрагента.</span>
+                    </div>
+                    <div class="price-tag mono">$10</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Право быть забытым</span>
+                        <span class="service-desc">Помощь в удалении нежелательной информации.</span>
+                    </div>
+                    <div class="price-tag mono">$50</div>
+                </div>
+            </div>
+
+            <!-- Категория 02 -->
+            <div class="category-header mono">02 / Консалтинг и обучение</div>
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Консультация</span>
+                        <span class="service-desc">Профессиональный разбор вашего кейса.</span>
+                    </div>
+                    <div class="price-tag mono">$15/час</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Персональный аудит</span>
+                        <span class="service-desc">Глубокий анализ вашей личной безопасности.</span>
+                    </div>
+                    <div class="price-tag mono">$40</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Обучающий курс OSINT</span>
+                        <span class="service-desc">Полная программа обучения.</span>
+                    </div>
+                    <div class="price-tag mono">$60</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Подготовка материала</span>
+                        <span class="service-desc">Подготовка вашего материала исследования для публикации.</span>
+                    </div>
+                    <div class="price-tag mono">$10</div>
+                </div>
+            </div>
+
+            <!-- Категория 03 -->
+            <div class="category-header mono">03 / Инфраструктура</div>
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Прокси Чехии: Резидентские</span>
+                    </div>
+                    <div class="price-tag mono">$3/ГБ</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="service-title">Прокси Чехии: Мобильные</span>
+                    </div>
+                    <div class="price-tag mono">$6/ГБ</div>
+                </div>
+            </div>
+
+            <!-- Дополнительный блок по регионам -->
+            <div class="info-block mono uppercase tracking-wider text-[10px]">
+                <span class="text-white">Note:</span> За другими регионами прокси уточнять в личные сообщения.
+            </div>
+        </main>
+
+        <footer class="mono">
+            <div>xaynov © 2026</div>
+            <div>USDT / TON</div>
+            <a href="mailto:contact@xaynov.live" class="hover:text-white transition-colors">contact@xaynov.live</a>
+        </footer>
+    </div>
+
+</body>
+</html>
