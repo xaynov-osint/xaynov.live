@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xaynov | Политика и регламент</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-main: #e5e5e5;
+            --text-muted: #737373;
+            --border-color: #171717;
+            --accent: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+        }
+
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 2rem;
+        }
+
+        header {
+            margin-bottom: 6rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 3rem;
+        }
+
+        .legal-section {
+            margin-bottom: 5rem;
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 3rem;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 500;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #a3a3a3;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .legal-highlight {
+            padding: 2.5rem;
+            background: #0a0a0a;
+            border: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+
+        .stop-list-box {
+            border: 1px solid #262626;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            margin-top: 1rem;
+        }
+
+        .footer-line {
+            margin-top: 8rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        @media (max-width: 850px) {
+            .legal-section {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .section-label {
+                position: static;
+                margin-bottom: 1rem;
+            }
+            h1 { font-size: 2.5rem; }
+            .content-wrapper { padding: 4rem 1.5rem; }
+        }
+
+        ::selection {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <header>
+            <div class="mono text-[10px] uppercase text-[#444] mb-6 tracking-[0.3em]">Official Document // Confidential</div>
+            <h1>Политическая и этическая декларация</h1>
+            <p class="text-xl text-[#737373] font-light max-w-2xl mt-4">
+                Фундаментальные принципы независимого OSINT-исследования, регламент взаимодействия и финансовая политика проекта.
+            </p>
+        </header>
+
+        <main>
+            <!-- Раздел 01: Миссия -->
+            <div class="legal-section">
+                <div class="section-label mono">01 / Mission</div>
+                <div>
+                    <h2>Миссия и академическая направленность</h2>
+                    <p>Данный проект является моим независимым исследовательским ресурсом. Моя деятельность строится вокруг академического анализа информационного пространства. Я рассматриваю данные не как инструмент давления, а как объект научного изучения.</p>
+                    <p>Все публикуемые материалы созданы с целью демонстрации прозрачности современного цифрового мира и направлены на повышение общей грамотности в вопросах информационной безопасности.</p>
+                </div>
+            </div>
+
+            <!-- Раздел 02: Ограничения -->
+            <div class="legal-section">
+                <div class="section-label mono">02 / Restrictions</div>
+                <div>
+                    <h2>Отказ от деструктивной деятельности</h2>
+                    <p>Я официально заявляю: проект не является платформой для обучения деанонимизации, кибершантажу, доксингу или любым другим формам преследования.</p>
+                    <ul class="space-y-4 border-l border-[#222] pl-6 my-6 italic text-[#888] text-[0.95rem]">
+                        <li>Я не публикую гайды для совершения противоправных действий.</li>
+                        <li>Я не предоставляю доступ к закрытым базам данных.</li>
+                        <li>На ресурсе запрещена пропаганда нарушения права на неприкосновенность частной жизни.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Раздел 03: Регламент услуг -->
+            <div class="legal-section">
+                <div class="section-label mono">03 / Terms</div>
+                <div>
+                    <h2>Порядок взаимодействия и ТЗ</h2>
+                    <p>Работа над любым проектом начинается исключительно после предоставления четкого Технического Задания (ТЗ) и указания цели поиска. Запросы без конкретики игнорируются.</p>
+                    <p>Если в целях прослеживается «чернуха», сталкерство, бытовые конфликты или попытки работы по запрещенным категориям — в сотрудничестве будет отказано без объяснения причин.</p>
+                </div>
+            </div>
+
+            <!-- Раздел 04: Стоп-лист -->
+            <div class="legal-section">
+                <div class="section-label mono">04 / Stop List</div>
+                <div>
+                    <h2>Категории-исключения</h2>
+                    <p>Я дорожу своей репутацией и безопасностью, поэтому категорически не принимаю в работу следующие объекты:</p>
+                    <div class="stop-list-box">
+                        <ul class="space-y-2 mono text-[12px] text-[#737373]">
+                            <li>- Сотрудники спецслужб и силовых структур</li>
+                            <li>- Военнослужащие в зоне боевых действий</li>
+                            <li>- Госслужащие и политики (PEP)</li>
+                            <li>- Объекты личных/бытовых конфликтов</li>
+                        </ul>
+                    </div>
+                    <p class="mt-4 text-[0.9rem] italic border-t border-[#1a1a1a] pt-4">Важно: Если принадлежность объекта к стоп-листу вскрывается в процессе работы, работа прекращается немедленно без выдачи отчета. Предоплата удерживается в качестве штрафа.</p>
+                </div>
+            </div>
+
+            <!-- Раздел 05: Финансы -->
+            <div class="legal-section">
+                <div class="section-label mono">05 / Financials</div>
+                <div>
+                    <h2>Финансовая политика</h2>
+                    <p>Все финансовые отношения строятся на принципе добровольного вознаграждения за проведение академического/бизнес исследования.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-6">
+                        <div>
+                            <h3 class="mt-0 text-[13px] uppercase tracking-wider text-white/60">Валюта</h3>
+                            <p class="text-sm">USDT (TRC-20, BEP-20, TON), TON. Другие активы не принимаются.</p>
+                        </div>
+                        <div>
+                            <h3 class="mt-0 text-[13px] uppercase tracking-wider text-white/60">Схема 50/50</h3>
+                            <p class="text-sm">Предоплата — за факт начала исследования. Пост-оплата — за итоговый результат.</p>
+                        </div>
+                    </div>
+                    <p class="text-[0.9rem]">Срочные запросы тарифицируются с коэффициентом x2.</p>
+                </div>
+            </div>
+
+            <!-- Раздел 06: Гарантии -->
+            <div class="legal-section">
+                <div class="section-label mono">06 / Guarantee</div>
+                <div>
+                    <h2>Возврат средств и гарантии</h2>
+                    <p>Перед началом работы заказчик обязан подтвердить согласие с регламентом. Это исключает претензии при «пустом» результате по объекту (ввиду специфики работы с открытыми данными).</p>
+                    <p>Возврат средств возможен только в случае, если я сам отказываюсь от выполнения работы до её завершения. После оказания услуги возврат не предусмотрен.</p>
+                </div>
+            </div>
+
+            <!-- Блок Юрисдикции -->
+            <div class="legal-highlight">
+                <div class="mono text-[10px] text-[#444] mb-8 tracking-[0.2em] uppercase">Legal Basis // Republic of Belarus</div>
+                
+                <div class="mb-12">
+                    <h2 class="text-white text-xl">Юридический базис</h2>
+                    <p class="text-sm">Деятельность осуществляется в строгом соответствии с законодательством РБ. Я не занимаюсь незаконным оборотом информации.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="mono text-[12px] uppercase tracking-wider border-b border-[#222] pb-2 mb-4">Закон № 99-З</h3>
+                        <p class="text-[0.9rem] leading-relaxed">
+                            Вся работа с информацией строится на основании Статьи 6, абзаца 11 Закона РБ «О защите персональных данных». Я обрабатываю персональные данные, которые являются общедоступными, либо иными способами, предусмотренными законодательством, исключающими нарушение прав субъектов. Моя задача — сбор и систематизация информации, которую объект исследования сам сделал публичной или которая находится в открытых реестрах и источниках.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="mono text-[12px] uppercase tracking-wider border-b border-[#222] pb-2 mb-4">Статья 733 ГК РБ</h3>
+                        <p class="text-[0.9rem] leading-relaxed">
+                            Взаимодействие со мной классифицируется как договор возмездного оказания услуг. Предметом договора является не «продажа данных», а информационная услуга. Заказчик оплачивает исключительно потраченное время специалиста, его экспертные навыки, методологию поиска и интеллектуальные усилия по структурированию разрозненных данных. Факт предоставления отчета является подтверждением выполнения услуги по анализу информационного поля.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-line mono">
+            <div>xaynov © 2026</div>
+            <div class="hidden sm:block border-x border-[#1a1a1a] px-8 py-1">v.1.0.2 // secure</div>
+            <a href="mailto:contact@xaynov.run" class="hover:text-white transition-colors">contact@xaynov.live</a>
+        </footer>
+    </div>
+
+</body>
+</html>
