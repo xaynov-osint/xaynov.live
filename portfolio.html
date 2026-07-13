@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xaynov | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/reveal.js"></script>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <header>
+            <div class="mono text-[10px] uppercase text-[#444] mb-6 tracking-[0.3em]">Case Studies // OSINT Portfolio</div>
+            <h1>Портфолио</h1>
+            <p class="text-xl text-[#737373] font-light max-w-2xl mt-4">
+                OSINT-исследователь · Case-Officer. Разведка на основе открытых данных, деанонимизация и аналитика цифровых активов.
+            </p>
+        </header>
+
+        <main>
+
+            <section class="section reveal">
+                <div class="category-header mono">01 / Направления деятельности</div>
+                <div class="dir-grid">
+                    <div class="dir-card">
+                        <div class="tag mono">Due Diligence</div>
+                        <h3>Комплексные проверки</h3>
+                        <p>Проверка физических и юридических лиц: репутация, связи, риски и подтверждение сведений из открытых источников.</p>
+                    </div>
+                    <div class="dir-card">
+                        <div class="tag mono">Threat Intelligence</div>
+                        <h3>Мониторинг угроз</h3>
+                        <p>Отслеживание деструктивных сообществ, инфраструктуры и потенциальных угроз в цифровом пространстве.</p>
+                    </div>
+                    <div class="dir-card">
+                        <div class="tag mono">Crypto Intelligence</div>
+                        <h3>Аналитика цифровых активов</h3>
+                        <p>Исследование крипто-кошельков, транзакций и бирж, построение цепочек движения активов.</p>
+                    </div>
+                    <div class="dir-card">
+                        <div class="tag mono">HUMINT</div>
+                        <h3>Работа с источником</h3>
+                        <p>Разведывательные мероприятия, построенные на прямом контакте с человеком, в рамках этических и правовых норм.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="category-header mono">02 / Кейсы</div>
+
+                <article class="case reveal">
+                    <div class="case-label mono">Case №1 // +888 Protocol</div>
+                    <h3>«+888 Protocol»</h3>
+                    <p class="case-sub">Расследование мошеннической схемы в сфере цифровых активов и идентификация её представителя.</p>
+
+                    <div class="case-row">
+                        <div class="k mono">Задача</div>
+                        <div class="v">Преодоление созданной субъектом анонимности и установление его физической личности (деанонимизация) для формирования доказательной базы и передачи материалов заказчику.</div>
+                    </div>
+                    <div class="case-row">
+                        <div class="k mono">Результат</div>
+                        <div class="v">Личность правонарушителя деанонимизирована в полном объёме; консолидированный отчёт и визуализация связей переданы заказчику.</div>
+                    </div>
+                    <div class="case-row">
+                        <div class="k mono">Роль</div>
+                        <div class="v">Исследователь</div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="chip mono">Deanonymization</span>
+                        <span class="chip mono">Crypto Intelligence</span>
+                        <span class="chip mono">Link Analysis</span>
+                    </div>
+
+                    <a href="https://xaynov.live/reports/%2B888%20Protocol.pdf" target="_blank" class="report-link mono">Открыть отчёт <span>→</span></a>
+                </article>
+
+                <article class="case reveal">
+                    <div class="case-label mono">Case №2 // The Loot Case</div>
+                    <h3>«The Loot Case»</h3>
+                    <p class="case-sub">Расследование мошеннической инфраструктуры в сфере цифровых активов.</p>
+
+                    <div class="case-row">
+                        <div class="k mono">Задача</div>
+                        <div class="v">Полная ликвидация инфраструктуры и символический возврат активов.</div>
+                    </div>
+                    <div class="case-row">
+                        <div class="k mono">Результат</div>
+                        <div class="v">Задача выполнена: проект полностью удалён, активы возвращены.</div>
+                    </div>
+                    <div class="case-row">
+                        <div class="k mono">Роль</div>
+                        <div class="v">Case-Officer</div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="chip mono">Threat Intelligence</span>
+                        <span class="chip mono">Infrastructure Takedown</span>
+                        <span class="chip mono">Asset Recovery</span>
+                    </div>
+
+                    <a href="https://xaynov.live/reports/The%20Loot%20Case.pdf" target="_blank" class="report-link mono">Открыть отчёт <span>→</span></a>
+                </article>
+
+                <article class="case reveal">
+                    <div class="case-label mono">Case №3 // Telegram Forward ID Spoofing</div>
+                    <h3>«Telegram Forward ID Spoofing»</h3>
+                    <p class="case-sub">Разбор инцидента в прямом эфире: в сервисные чаты Telegram (куда приходят коды входа) пришли сообщения от «официального» аккаунта — о смерти Дурова, принудительной интеграции с госуслугами и угрозы. Верификация источника и анализ эксплойта.</p>
+
+                    <div class="case-row">
+                        <div class="k mono">Задача</div>
+                        <div class="v">Установить, действительно ли сообщения приходят от системного аккаунта Telegram, и понять, как неофициальный аккаунт оказался в доверенной ветке сервисных уведомлений.</div>
+                    </div>
+                    <div class="case-row">
+                        <div class="k mono">Результат</div>
+                        <div class="v">Аккаунт разоблачён как неофициальный, вскрыт механизм эксплойта и оценён потенциал угрозы.</div>
+                    </div>
+                    <div class="case-row">
+                        <div class="k mono">Роль</div>
+                        <div class="v">Исследователь — первичная фактура и расследование</div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="chip mono">Telegram</span>
+                        <span class="chip mono">Forward Spoofing</span>
+                        <span class="chip mono">Threat Intelligence</span>
+                    </div>
+
+                    <a href="https://xaynov.live/reports/TelegramForwardIDSpoofing.pdf" target="_blank" class="report-link mono">Открыть отчёт <span>→</span></a>
+                </article>
+            </section>
+
+            <section class="section reveal">
+                <div class="category-header mono">03 / Достижения</div>
+                <div class="achievement">
+                    <div>
+                        <span class="badge mono">CTF</span>
+                        <h3>Business Intelligence CTF</h3>
+                        <p>Выполнено 100% конкурсных заданий по бизнес-разведке. Официальное поощрение от организаторов за продемонстрированный высокий уровень технических компетенций.</p>
+                        <a href="#" class="report-link mono">Подробнее <span>→</span></a>
+                    </div>
+                    <a href="img/ctf.png" target="_blank" class="ctf-shot">
+                        <img src="img/ctf.png" alt="Business Intelligence CTF — сертификат">
+                    </a>
+                </div>
+            </section>
+
+            <section class="section reveal">
+                <div class="category-header mono">04 / Опыт работы</div>
+                <div class="exp-item">
+                    <div>
+                        <h3>Контр-Культура</h3>
+                        <p>counterculture.digital — активный участник сообщества.</p>
+                    </div>
+                    <div class="exp-date mono">11/2024 — н.в.</div>
+                </div>
+                <div class="exp-item">
+                    <div>
+                        <h3>Freelance</h3>
+                        <p>Частные расследования и аудиты безопасности.</p>
+                    </div>
+                    <div class="exp-date mono">12/2024 — н.в.</div>
+                </div>
+                <div class="exp-item">
+                    <div>
+                        <h3>Самообразование</h3>
+                        <p>Самоучка. Практика на реальных кейсах и CTF-соревнованиях.</p>
+                    </div>
+                    <div class="exp-date mono">Self-taught</div>
+                </div>
+            </section>
+
+            <section class="section reveal">
+                <div class="category-header mono">05 / Отказ от ответственности</div>
+                <div class="disclaimer">
+                    <div class="label mono">Disclaimer // Ethics</div>
+                    <p>Этот проект — наглядное воплощение моих профессиональных принципов в области работы с открытыми данными (OSINT). Вся представленная информация получена из общедоступных источников с использованием строго легальных методов, соответствующих законодательству и условиям использования платформ.</p>
+                    <p>Ключевой ориентир в работе — этический принцип «не навреди». Каждый кейс, исследование или заметка служат образовательным целям, развивают критическое мышление и повышают осведомлённость о цифровой среде.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="mono">
+            <div>xaynov © 2026</div>
+            <div class="hidden sm:block border-x border-[#1a1a1a] px-8 py-1">OSINT // Case-Officer</div>
+            <a href="mailto:contact@xaynov.live" class="hover:text-white transition-colors">contact@xaynov.live</a>
+        </footer>
+    </div>
+
+</body>
+</html>

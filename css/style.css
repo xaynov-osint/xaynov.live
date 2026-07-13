@@ -1,0 +1,71 @@
+:root {
+    --bg-color: #080808;
+    --card-bg: #0f0f0f;
+    --border-color: #1a1a1a;
+    --accent-white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--accent-white);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    border-color: #333;
+    background: #121212;
+}
+
+.profile-section { grid-column: span 4; grid-row: span 2; }
+.tall-card { grid-column: span 2; grid-row: span 2; }
+.wide-card { grid-column: span 4; }
+.standard-card { grid-column: span 2; }
+
+@media (max-width: 1024px) {
+    .dashboard-grid { grid-template-columns: repeat(4, 1fr); }
+    .profile-section { grid-column: span 4; }
+    .wide-card, .tall-card, .standard-card { grid-column: span 2; }
+}
+
+@media (max-width: 640px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+    .profile-section, .wide-card, .tall-card, .standard-card { grid-column: span 1; }
+}
+
+.tag {
+    font-size: 10px;
+    padding: 4px 8px;
+    background: rgba(255,255,255,0.05);
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+.img-container {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.card:hover .img-container {
+    filter: grayscale(0%);
+}

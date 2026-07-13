@@ -1,0 +1,336 @@
+:root {
+    --bg-color: #050505;
+    --text-main: #e5e5e5;
+    --text-muted: #737373;
+    --border-color: #171717;
+    --accent: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+}
+
+header {
+    margin-bottom: 5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 3rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+}
+
+.section {
+    margin-bottom: 5rem;
+}
+
+.category-header {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #444;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.category-header::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
+/* Направления */
+.dir-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--border-color);
+    border: 1px solid var(--border-color);
+}
+
+.dir-card {
+    background: var(--bg-color);
+    padding: 1.75rem;
+    transition: background 0.3s ease;
+}
+
+.dir-card:hover { background: #0a0a0a; }
+
+.dir-card .tag {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.dir-card h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin: 0.75rem 0 0.5rem;
+}
+
+.dir-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #a3a3a3;
+    font-weight: 300;
+}
+
+/* Кейсы */
+.case {
+    border: 1px solid var(--border-color);
+    background: #0a0a0a;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.case-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.case h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.case-sub {
+    font-size: 0.95rem;
+    color: #a3a3a3;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.case-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+    align-items: baseline;
+}
+
+.case-row .k {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.case-row .v {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    font-weight: 300;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.75rem;
+}
+
+.chip {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+}
+
+.report-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px;
+    transition: border-color 0.3s ease, gap 0.3s ease;
+}
+
+.report-link:hover { border-color: var(--accent); gap: 0.9rem; }
+
+/* Достижения */
+.achievement {
+    border: 1px solid var(--border-color);
+    background: #0a0a0a;
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.achievement h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.achievement p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #a3a3a3;
+    font-weight: 300;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #050505;
+    background: var(--accent);
+    padding: 4px 10px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.ctf-shot {
+    display: block;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.ctf-shot:hover { border-color: #333; }
+
+.ctf-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Опыт */
+.exp-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.exp-item h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
+
+.exp-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+.exp-date {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* Дисклеймер */
+.disclaimer {
+    padding: 2.5rem;
+    background: #0a0a0a;
+    border: 1px solid var(--border-color);
+}
+
+.disclaimer .label {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.disclaimer p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #a3a3a3;
+    font-weight: 300;
+}
+
+footer {
+    margin-top: 8rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 720px) {
+    .content-wrapper { padding: 4rem 1.5rem; }
+    h1 { font-size: 2.5rem; }
+    .dir-grid { grid-template-columns: 1fr; }
+    .case, .achievement, .disclaimer { padding: 1.75rem; }
+    .achievement { grid-template-columns: 1fr; }
+    .case-row { grid-template-columns: 1fr; gap: 0.4rem; }
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.reveal {
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-ready .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.reveal-ready .reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-ready .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

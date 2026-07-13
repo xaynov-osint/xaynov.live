@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xaynov | OSINT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen p-4 md:p-8 lg:p-16">
+    <div class="max-w-6xl mx-auto">
+
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4">
+            <div>
+                <h1 class="text-2xl font-medium tracking-tight">xaynov</h1>
+                <p class="text-sm text-white/40 mt-1">Independent OSINT Analyst</p>
+            </div>
+            <div class="flex gap-4 mono text-[11px] text-white/30 uppercase">
+                <span id="current-time">00:00:00</span>
+                <span>/</span>
+                <span>Active Data Node</span>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+
+            <div class="card profile-section md:flex-row gap-8 items-center">
+                <div class="img-container shrink-0">
+                    <img src="img/image.jpg" alt="xaynov" class="w-32 h-32 md:w-56 md:h-56 object-cover border border-white/5">
+                </div>
+                <div class="flex flex-col h-full justify-center">
+                    <div class="tag mb-4">Identity</div>
+                    <h2 class="text-2xl font-medium mb-4">Xaynov</h2>
+                    <p class="text-white/40 text-sm leading-relaxed mb-6">
+                        Специализируюсь на поиске информации в открытых источниках, анализе цифровых следов и обучении методологии OSINT.
+                    </p>
+                    <a href="https://xaynov.live/price.html" target="_blank" class="w-full md:w-fit px-6 py-3 bg-white text-black font-semibold text-sm hover:bg-gray-200 transition-colors text-center">
+                        Услуги и Прайс-лист
+                    </a>
+                </div>
+            </div>
+
+            <a href="https://t.me/osint_xaynov" target="_blank" class="card tall-card group">
+                <div>
+                    <div class="tag mb-6">Primary Channel</div>
+                    <h3 class="text-2xl font-medium mb-3">Telegram</h3>
+                    <p class="text-white/40 text-sm">Основной узел связи: новости, аналитика и рефлексия</p>
+                </div>
+                <div class="pt-8 flex items-center gap-2 text-sm font-medium group-hover:gap-4 transition-all uppercase mono text-[10px]">
+                    Open Feed <span class="text-lg">→</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/@xaynov-osint" class="card standard-card group">
+                <div class="tag mb-6">Video Archive</div>
+                <h3 class="text-lg font-medium mb-2">YouTube</h3>
+                <p class="text-white/40 text-xs leading-relaxed">Образовательный контент, разборы инструментов и лекции.</p>
+                <div class="mt-4 text-[10px] mono text-white/20 group-hover:text-white/60 transition-colors uppercase">Connect Node</div>
+            </a>
+
+            <a href="https://tiktok.com/@xaynov_osint" target="_blank" class="card standard-card group">
+                <div class="tag mb-6">Short Media</div>
+                <h3 class="text-lg font-medium mb-2">TikTok</h3>
+                <p class="text-white/40 text-xs leading-relaxed">Аналитика, кейсы и цифровой след в виде быстрого дофамина.</p>
+                <div class="mt-4 text-[10px] mono text-white/20 group-hover:text-white/60 transition-colors uppercase">Watch</div>
+            </a>
+
+            <a href="https://github.com/xaynov-osint" target="_blank" class="card standard-card">
+                <div class="tag mb-6">Repository</div>
+                <h3 class="text-lg font-medium mb-2">GitHub</h3>
+                <p class="text-white/40 text-xs leading-relaxed">Инструменты и скрипты для автоматизации задач.</p>
+            </a>
+
+            <a href="portfolio.html" class="card standard-card group">
+                <div class="tag mb-6">Portfolio</div>
+                <h3 class="text-lg font-medium mb-2">Portfolio</h3>
+                <p class="text-white/40 text-xs mt-2">Примеры отчетов и реализованных проектов.</p>
+                <div class="mt-4 text-[10px] mono text-white/20 group-hover:text-white/60 transition-colors uppercase">Access Archive</div>
+            </a>
+
+        </div>
+
+        <footer class="mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="max-w-xs">
+                <p class="text-[10px] leading-relaxed text-white/20 uppercase tracking-widest mono">
+                    Данный ресурс создан исключительно в образовательных и научно-исследовательских целях и представляет собой проект, направленный на изучение вопросов кибербезопасности и защиты персональных данных. Все права защищены. 2026
+                </p>
+            </div>
+            <div class="flex gap-8 text-[11px] mono text-white/40 uppercase">
+                <a href="policy.html" class="hover:text-white transition-colors">Privacy</a>
+                <a href="mailto:contact@xaynov.live" class="hover:text-white transition-colors">Contact</a>
+                <a href="price.html" class="hover:text-white transition-colors">Price-List</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
