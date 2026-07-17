@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xaynov | Программа обучения OSINT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/course.css">
+    <script src="js/reveal.js"></script>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <header>
+            <div class="mono text-[10px] uppercase text-[#444] mb-6 tracking-[0.3em]">Training Program // 7 Days</div>
+            <h1>Программа обучения OSINT</h1>
+            <p class="text-xl text-[#737373] font-light max-w-2xl mt-4">
+                Недельный интенсив по методологии разведки на основе открытых источников — от постановки задачи до готового отчёта.
+            </p>
+        </header>
+
+        <div class="meta-grid">
+            <div class="meta-cell">
+                <div class="k mono">Длительность</div>
+                <div class="v">7 дней</div>
+            </div>
+            <div class="meta-cell">
+                <div class="k mono">Формат</div>
+                <div class="v">1.5 часа в день</div>
+            </div>
+            <div class="meta-cell">
+                <div class="k mono">Уровень</div>
+                <div class="v">Начальный / средний</div>
+            </div>
+            <div class="meta-cell">
+                <div class="k mono">Для кого</div>
+                <div class="v">Аналитики, журналисты, безопасники, энтузиасты</div>
+            </div>
+        </div>
+
+        <main>
+
+            <section class="day reveal">
+                <div class="day-label mono">День 01</div>
+                <div>
+                    <h2>Основы и методология</h2>
+                    <ul>
+                        <li>Что такое OSINT, разница между OSINT, HUMINT и другими видами разведки</li>
+                        <li>Цикл разведки: постановка задачи → сбор → анализ → верификация → отчёт</li>
+                        <li>Этика и правовые границы: законодательство о персональных данных, границы допустимого</li>
+                        <li>Основы OPSEC: виртуальные машины, VPN, «чистые» браузеры, sock-puppet аккаунты</li>
+                        <li>Систематизация информации: отчёты и виды визуализации</li>
+                    </ul>
+                    <div class="practice">
+                        <div class="k mono">Практика</div>
+                        <div class="v">Настройка рабочего окружения: виртуальная машина, браузер с расширениями, менеджер заметок.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="day reveal">
+                <div class="day-label mono">День 02</div>
+                <div>
+                    <h2>Поиск и поисковые операторы</h2>
+                    <ul>
+                        <li>Продвинутые поисковые операторы</li>
+                        <li>Доркинг: базовые техники</li>
+                        <li>Поиск по изображениям и обратный поиск — с оговоркой об этике применения</li>
+                        <li>Извлечение и анализ метаданных файлов</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="day reveal">
+                <div class="day-label mono">День 03</div>
+                <div>
+                    <h2>Социальные сети</h2>
+                    <ul>
+                        <li>Поиск профилей по никнейму</li>
+                        <li>Анализ социальных платформ и их особенностей</li>
+                        <li>Агрегаторы и специализированные сервисы поиска</li>
+                        <li>Восстановление удалённого и архивного контента</li>
+                    </ul>
+                    <div class="practice">
+                        <div class="k mono">Практика</div>
+                        <div class="v">Построение социального графа по учебному кейсу.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="day reveal">
+                <div class="day-label mono">День 04</div>
+                <div>
+                    <h2>Домены, инфраструктура и техническая разведка</h2>
+                    <ul>
+                        <li>Регистрационные данные доменов, DNS-записи, поиск поддоменов</li>
+                        <li>Определение технологий сайта</li>
+                        <li>Анализ IP, геолокация, хостинг</li>
+                        <li>Архивы веб-страниц, отслеживание изменений сайтов</li>
+                    </ul>
+                    <div class="practice">
+                        <div class="k mono">Практика</div>
+                        <div class="v">Технический профиль организации по её сайту.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="day reveal">
+                <div class="day-label mono">День 05</div>
+                <div>
+                    <h2>Бизнес-разведка (Corporate OSINT)</h2>
+                    <ul>
+                        <li>Зачем нужна бизнес-разведка: due diligence перед сделкой, проверка контрагента, анализ конкурентов, оценка рисков</li>
+                        <li>
+                            Источники корпоративной информации:
+                            <ul class="sub-list">
+                                <li>Государственные реестры юридических лиц — национальные и международные</li>
+                                <li>Госзакупки и тендеры — кто с кем работает</li>
+                                <li>Судебные базы — судится ли компания и с кем</li>
+                                <li>Финансовая отчётность, если она публикуется</li>
+                            </ul>
+                        </li>
+                        <li>Что можно узнать: учредители, бенефициары, связанные компании, история смены руководства, признаки «фирмы-однодневки»</li>
+                    </ul>
+                    <div class="practice">
+                        <div class="k mono">Практика</div>
+                        <div class="v">Поиск формального бенефициара.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="day reveal">
+                <div class="day-label mono">День 06</div>
+                <div>
+                    <h2>Верификация и работа с дезинформацией</h2>
+                    <ul>
+                        <li>Фактчекинг источников, оценка достоверности</li>
+                        <li>Проверка на дипфейки и манипуляции с медиа</li>
+                        <li>Кросс-верификация данных из нескольких источников</li>
+                        <li>Обзор категорий инструментов медиа-криминалистики</li>
+                    </ul>
+                    <div class="practice">
+                        <div class="k mono">Практика</div>
+                        <div class="v">Разбор реального кейса верификации.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="day reveal">
+                <div class="day-label mono">День 07</div>
+                <div>
+                    <h2>Итоговый проект и оформление отчёта</h2>
+                    <ul>
+                        <li>Структура OSINT-отчёта: цель, методология, находки, источники, уровень достоверности</li>
+                        <li>Визуализация связей</li>
+                        <li>Разбор ошибок, обратная связь</li>
+                    </ul>
+                    <div class="practice">
+                        <div class="k mono">Практика</div>
+                        <div class="v">Полноценное учебное расследование — от постановки задачи до готового отчёта.</div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="cta reveal">
+            <div>
+                <h2>Записаться на курс</h2>
+                <p>Полная программа обучения — 7 дней по 1.5 часа. Перед стартом обсуждаем цели и текущий уровень.</p>
+            </div>
+            <div>
+                <div class="cta-price mono">$60</div>
+                <a href="https://t.me/ownstates" target="_blank" class="cta-btn mono">Связаться</a>
+            </div>
+        </div>
+
+        <footer class="mono">
+            <div>xaynov © 2026</div>
+            <a href="price.html" class="hover:text-white transition-colors">← Прайс-лист</a>
+            <a href="mailto:contact@xaynov.live" class="hover:text-white transition-colors">contact@xaynov.live</a>
+        </footer>
+    </div>
+
+</body>
+</html>

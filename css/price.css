@@ -94,6 +94,16 @@ h1 {
     padding-left: 2rem;
 }
 
+a.service-item .service-title::after {
+    content: " →";
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+a.service-item:hover .service-title::after { opacity: 1; }
+
+a.service-item:hover .service-desc { color: #a3a3a3; }
+
 .info-block {
     margin-top: 3rem;
     padding: 1.5rem;
