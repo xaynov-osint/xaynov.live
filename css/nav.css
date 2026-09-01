@@ -1,0 +1,91 @@
+/* Сквозная навигация — подключается на всех страницах */
+
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg-color, #050505);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem 2rem;
+    flex-wrap: wrap;
+    padding: 1.25rem 0;
+    margin-bottom: 3.5rem;
+    border-bottom: 1px solid #171717;
+}
+
+.site-nav a {
+    text-decoration: none;
+}
+
+.site-nav-brand {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+.site-nav-brand:hover { opacity: 0.6; }
+
+.site-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+}
+
+.site-nav-links a {
+    position: relative;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #737373;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.site-nav-links a:hover { color: #ffffff; }
+
+.site-nav-links a.active { color: #ffffff; }
+
+.site-nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #ffffff;
+}
+
+.language-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-left: 0.25rem;
+    padding: 0.35rem 0.55rem;
+    border: 1px solid #292929;
+    border-radius: 999px;
+    background: transparent;
+    color: #737373;
+    font: inherit;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.language-toggle:hover, .language-toggle:focus-visible { border-color: #737373; color: #ffffff; outline: none; }
+.language-toggle-track { position: relative; width: 1.8rem; height: 0.9rem; border: 1px solid currentColor; border-radius: 999px; }
+.language-toggle-track::after { content: ""; position: absolute; top: 0.12rem; left: 0.14rem; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: currentColor; transition: transform 0.25s ease; }
+html[data-language="en"] .language-toggle-track::after { transform: translateX(0.82rem); }
+
+@media (max-width: 640px) {
+    .site-nav {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .site-nav-links { gap: 1.15rem; }
+    .site-nav-links a { font-size: 10px; letter-spacing: 0.1em; }
+}
